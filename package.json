@@ -1,0 +1,16 @@
+{
+  "name": "playwrightdockerplayground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "Sandeep Chaugule",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.28.1",
+    "@types/node": "^18.11.11",
+    "toml": "^3.0.0"
+  }
+}

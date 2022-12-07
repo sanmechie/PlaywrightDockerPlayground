@@ -1,0 +1,113 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/PlaywrightDockerPlayground/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "",
+        "name": "",
+        "testDir": "D:/PlaywrightDockerPlayground",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "jsonReporter/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFile": "htmlReporter/htmlreport.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "configFile": "D:\\PlaywrightDockerPlayground\\playwright.config.ts",
+    "rootDir": "D:/PlaywrightDockerPlayground",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.28.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\example.spec.ts",
+      "file": "tests/example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "POM Framework for register page",
+          "file": "tests/example.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Simple form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3765,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-12-07T19:33:20.387Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\PlaywrightDockerPlayground\\test-results\\tests-example-POM-Framework-for-register-page-Simple-form-validation\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b3a1b63342050f33a2cc-7d35c61b9b95ab089ed8",
+              "file": "tests/example.spec.ts",
+              "line": 21,
+              "column": 4
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

@@ -14,7 +14,7 @@
       {
         "outputDir": "D:/PlaywrightDockerPlayground/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "id": "",
         "name": "",
         "testDir": "D:/PlaywrightDockerPlayground",
@@ -22,7 +22,7 @@
         "testMatch": [
           "tests/*.spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 200000
       }
     ],
     "reporter": [
@@ -35,7 +35,8 @@
       [
         "html",
         {
-          "outputFile": "htmlReporter/htmlreport.json"
+          "outputFile": "htmlReporter/htmlreport.json",
+          "open": "never"
         }
       ]
     ],
@@ -54,25 +55,25 @@
   },
   "suites": [
     {
-      "title": "tests\\example.spec.ts",
-      "file": "tests/example.spec.ts",
+      "title": "tests\\home.page.spec.ts",
+      "file": "tests/home.page.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "POM Framework for register page",
-          "file": "tests/example.spec.ts",
-          "line": 6,
+          "title": "Test Homepage",
+          "file": "tests/home.page.spec.ts",
+          "line": 7,
           "column": 6,
           "specs": [
             {
-              "title": "Simple form validation",
+              "title": "My Account Menu",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 200000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "",
@@ -81,17 +82,17 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 3765,
+                      "duration": 528,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2022-12-07T19:33:20.387Z",
+                      "startTime": "2022-12-19T16:36:07.504Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "D:\\PlaywrightDockerPlayground\\test-results\\tests-example-POM-Framework-for-register-page-Simple-form-validation\\test-finished-1.png"
+                          "path": "D:\\PlaywrightDockerPlayground\\test-results\\tests-home.page-Test-Homepage-My-Account-Menu\\test-finished-1.png"
                         }
                       ]
                     }
@@ -99,10 +100,65 @@
                   "status": "expected"
                 }
               ],
-              "id": "b3a1b63342050f33a2cc-7d35c61b9b95ab089ed8",
-              "file": "tests/example.spec.ts",
-              "line": 21,
-              "column": 4
+              "id": "1b1145ed35c50c2970c0-6f600dcb4eb0bb81468d",
+              "file": "tests/home.page.spec.ts",
+              "line": 27,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "tests\\register.page.spec.ts",
+      "file": "tests/register.page.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "POM Framework for register page",
+          "file": "tests/register.page.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Simple form validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 200000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2022-12-19T16:36:07.486Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "D:\\PlaywrightDockerPlayground\\test-results\\tests-register.page-POM-Framework-for-register-page-Simple-form-validation\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "65ec211378eb9698f77a-dd1e47744bbb8c9f3a8d",
+              "file": "tests/register.page.spec.ts",
+              "line": 27,
+              "column": 3
             }
           ]
         }

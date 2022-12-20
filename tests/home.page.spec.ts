@@ -6,10 +6,10 @@ import endpoint from "../configTypes"
 
 test.describe('Test Homepage', async() =>{ 
 
-    let page: Page;
-    let browser: Browser;
-    let context: BrowserContext;
-    let home: Home;
+      let page: Page;
+      let browser: Browser;
+      let context: BrowserContext;
+      let home: Home;
 
     
     test.beforeAll(async()=>{

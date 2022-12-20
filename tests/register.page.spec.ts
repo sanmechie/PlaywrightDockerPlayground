@@ -29,11 +29,4 @@ test.describe('POM Framework for register page', async () => {
     expect(await register.getFirstName()).toEqual('Sandeep');
   });
 
-  //  test('Test header menu', async()=>{
-  //   await expect (page.locator("ul[class='navbar-nav horizontal'] > li")).
-  //   toContainText(["Home", "Blog"
-
-  //   ]);
-
-  //  })
 });

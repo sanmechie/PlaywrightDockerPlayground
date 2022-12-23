@@ -1,0 +1,47 @@
+<!-- <div style="padding: 13px;">
+    <mat-spinner *ngIf="cities?.length === 0"></mat-spinner>
+    <h1>Cities</h1>
+    <mat-form-field>
+        <mat-select placeholder="Select City" name="Cities" >
+          <mat-option *ngFor="let city of cities"   [value]="city" ng-model="AreatoShow">{{ city.name}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div> -->
+
+<div class="container custom-container-2">
+  <!-- Employees list table, it hides when there is no employee -->
+  <div *ngIf="cities?.length !== 0">
+    <h3 class="mb-3 text-center">City and Area</h3>
+    <div class="col-md-12">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="City">City</th>
+            <th scope="Area">Area</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let city of cities">
+            <td>{{ city.name }}</td>
+            <td>{{ city.area }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container custom-container">
+  <div class="col-md-12">
+    <h3 class="mb-3 text-center">Add City</h3>
+    <div class="form-group">
+      <input type="text"  [(ngModel)]="cityDetails.name" class="form-control" placeholder="Name">
+    </div>
+    <div class="form-group">
+      <input type="text"  [(ngModel)]="cityDetails.area" class="form-control" placeholder="Area">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-success btn-lg btn-block" (click)="addCity(cityDetails)">Add City</button>
+    </div>
+   <p>{{message}}</p>
+  </div>
+</div>

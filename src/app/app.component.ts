@@ -21,11 +21,20 @@ export class AppComponent implements OnInit {
   }
 
   addCity(cityDetails: any) {
+    if (cityDetails.name === '') {
+      this.message = 'Name cannot be empty';
+      return;
+    }
+
+    if (Number(cityDetails.area) <= 0) {
+      this.message = 'Area should be greater than 0';
+      return;
+    }
     this.dataservice.addCity(cityDetails).subscribe((data: any) => {
       if (data === `${cityDetails.name} already exists`) {
         this.message = data;
       } else {
-        this.message = 'City data posted successfuly';
+        this.message = `${cityDetails.name} posted successfuly`;
         this.ngOnInit();
       }
     });

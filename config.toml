@@ -1,2 +1,2 @@
 base_url="https://ecommerce-playground.lambdatest.io/index.php?route=account/register"
-mock_url="http://localhost:4200"
+mock_url="http://localhost:4300"

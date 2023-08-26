@@ -1,12 +1,16 @@
 # Project description
 ```
-This is Project demonstrating POM framework along with running tests in Docker
+Simple Angular app and Fast API service
 ```
 
-## settin up env
+## settin up UI env
 ```
 npm ci
-
+npm start
+```
+## settin up API env
+```
+.\service\venv.bat
 ```
 
 ## Running tests
@@ -14,9 +18,9 @@ npm ci
 npm run test
 ```
 
-## Running tests in Docker
+## Deploying app via kubectl and Docker-desktop
 ```
-docker build -t playwrightdockerplayground .
-docker run -it playwrightdockerplayground:latest npm run test
+kubectl apply -f app-pod.yaml # To deploy fastapi
+kubectl apply -f ng-pod.yaml  # to deploy UI app
 ```
 

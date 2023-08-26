@@ -66,7 +66,7 @@ test.describe('Test Homepage', async () => {
       );
     }
 
-    expect(cityData.sort()).toEqual(['Bangalore', 'Delhi', 'Mumbai']);
+    expect(cityData.sort()).toContain(['Bangalore', 'Delhi', 'Mumbai']);
   });
 
   test('Validate empty City Name cannot be added', async () => {
